@@ -1,0 +1,53 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "sahara-dunes",
+      "description": "كثبان الرمل في مرزوكة",
+      "imageUrl": "https://picsum.photos/seed/sahara1/800/600",
+      "imageHint": "sahara desert"
+    },
+    {
+      "id": "chefchaouen-blue",
+      "description": "أزقة شفشاون الزرقاء",
+      "imageUrl": "https://picsum.photos/seed/bluecity/800/1000",
+      "imageHint": "chefchaouen streets"
+    },
+    {
+      "id": "marrakech-market",
+      "description": "أسواق مراكش العتيقة",
+      "imageUrl": "https://picsum.photos/seed/market/800/800",
+      "imageHint": "marrakech souks"
+    },
+    {
+      "id": "atlas-mountains",
+      "description": "جبال الأطلس الكبير",
+      "imageUrl": "https://picsum.photos/seed/atlas/1200/800",
+      "imageHint": "atlas mountains"
+    },
+    {
+      "id": "moroccan-tea",
+      "description": "طريقة تحضير الشاي المغربي",
+      "imageUrl": "https://picsum.photos/seed/tea/800/600",
+      "imageHint": "moroccan mint tea"
+    },
+    {
+      "id": "hassan-ii-mosque",
+      "description": "مسجد الحسن الثاني بالدار البيضاء",
+      "imageUrl": "https://picsum.photos/seed/mosque/1200/800",
+      "imageHint": "hassan ii mosque"
+    },
+    {
+      "id": "essaouira-port",
+      "description": "ميناء الصويرة التاريخي",
+      "imageUrl": "https://picsum.photos/seed/essaouira/800/600",
+      "imageHint": "essaouira port"
+    },
+    {
+      "id": "moroccan-zellige",
+      "description": "فن الزليج المغربي التقليدي",
+      "imageUrl": "https://picsum.photos/seed/zellige/800/800",
+      "imageHint": "moroccan zellige"
+    }
+  ]
+}

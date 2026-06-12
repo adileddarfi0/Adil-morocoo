@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 10% 10%;
+    --foreground: 40 10% 98%;
+    --card: 20 10% 12%;
+    --card-foreground: 40 10% 98%;
+    --popover: 20 10% 10%;
+    --popover-foreground: 40 10% 98%;
+    --primary: 17 76% 56%;
+    --primary-foreground: 40 10% 98%;
+    --secondary: 20 10% 18%;
+    --secondary-foreground: 40 10% 98%;
+    --muted: 20 10% 18%;
+    --muted-foreground: 40 5% 70%;
+    --accent: 345 75% 42%;
+    --accent-foreground: 40 10% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 20 10% 20%;
+    --input: 20 10% 20%;
+    --ring: 17 76% 56%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(17, 76%, 56%, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(345, 75%, 42%, 0.05) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+.reels-container::-webkit-scrollbar {
+  display: none;
+}
+.reels-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-morphism {
+  @apply bg-background/60 backdrop-blur-md border-white/10;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#E36B3B] to-[#BD1B43] bg-clip-text text-transparent;
+}
