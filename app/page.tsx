@@ -31,10 +31,27 @@ export default function Home() {
           fontSize: '20px',
           fontWeight: 'bold',
           boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-          transition: 'transform 0.2s'
+          marginBottom: '20px'
         }}
       >
         قناتي على YouTube ▶️
+      </a>
+
+      <a 
+        href="/adil-morocco-.apk" 
+        download
+        style={{
+          backgroundColor: '#00C853',
+          color: 'white',
+          padding: '18px 40px',
+          borderRadius: '12px',
+          textDecoration: 'none',
+          fontSize: '20px',
+          fontWeight: 'bold',
+          display: 'inline-block'
+        }}
+      >
+        تحميل تطبيق adil-morocco- ⬇️
       </a>
 
       <p style={{ marginTop: '60px', color: '#888' }}>
@@ -43,17 +60,3 @@ export default function Home() {
     </main>
   )
 }
-<a 
-  href="/adil-morocco-.apk" 
-  download
-  style={{
-    backgroundColor: '#00C853',
-    color: 'white',
-    padding: '18px 40px',
-    borderRadius: '12px',
-    textDecoration: 'none',
-    fontSize: '20px',
-    fontWeight: 'bold',
-    marginTop: '20px',
-    display: 'inline-block'
-  }}
