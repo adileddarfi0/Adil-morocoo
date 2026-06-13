@@ -43,3 +43,23 @@ export default function Home() {
     </main>
   )
 }
+<a 
+  href="/adil-morocco-.apk" 
+  download
+  style={{
+    backgroundColor: '#00C853',
+    color: 'white',
+    padding: '18px 40px',
+    borderRadius: '12px',
+    textDecoration: 'none',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    marginTop: '20px',
+    display: 'inline-block'
+  }}
+>
+  تحميل تطبيق adil-morocco- ⬇️
+</a>
+<p style={{ fontSize: '14px', color: '#888', marginTop: '10px' }}>
+  الحجم: 15MB | الإصدار 1.0 | مجاني
+</p>
