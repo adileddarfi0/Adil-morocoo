@@ -18,7 +18,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -33,9 +33,9 @@
       "label": "واجهة المنصة على الكمبيوتر"
     },
     {
-      "src": "/screenshot-mobile.png", 
-      "sizes": "750x1334",
-      "type": "image/png",
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png", 
       "form_factor": "narrow",
       "label": "واجهة المنصة على الجوال"
     }
