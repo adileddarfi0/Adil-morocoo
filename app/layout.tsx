@@ -1,14 +1,24 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Adil Morocoo',
-  description: 'منصة اجتماعية احترافية',
+  title: 'Adil Morocco',
+  description: 'منصة Adil Morocco الاجتماعية - تواصل وشارك المحتوى',
   manifest: '/manifest.json',
-  themeColor: '#00C853',
-  icons: {
-    icon: '/icon-512.png',
-    apple: '/icon-512.png',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Adil Morocco',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#1a1a1a',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -18,7 +28,34 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <RegisterSW />
+      </body>
     </html>
   )
 }
+
+// كومبوننت تسجيل السيرفس وركر
+function RegisterSW() {
+  'use client'
+  
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  }, []);
+
+  return null;
+}
+
+// لازم تضيف هذا السطر فوق
+import { useEffect } from 'react'
