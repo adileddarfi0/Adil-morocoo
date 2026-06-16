@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -6,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Adil Morocco',
-  description: 'منصة Adil Morocco الاجتماعية - تواصل وشارك المحتوى',
+  description: 'منصة Adil Morocco لمشاركة المحتوى',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -30,32 +31,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body className={inter.className}>
         {children}
-        <RegisterSW />
       </body>
     </html>
   )
 }
-
-// كومبوننت تسجيل السيرفس وركر
-function RegisterSW() {
-  'use client'
-  
-  useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
-      });
-    }
-  }, []);
-
-  return null;
-}
-
-// لازم تضيف هذا السطر فوق
-import { useEffect } from 'react'
